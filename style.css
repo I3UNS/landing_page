@@ -1,6 +1,7 @@
 *{
     color: #f9faf8;
     margin: 0 auto;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
@@ -38,6 +39,11 @@ a{
     align-items: center;
 
     margin: 68px auto;
+    
+}
+
+.hero-content h2, .hero-content p{
+    margin-bottom: 10px;
 }
 
 .hero-opener > img{
@@ -46,21 +52,15 @@ a{
     margin-left: 72px;
 }
 
-/* TEMPORARY COLOR SET */
-button{
-    color: black;
-}
-
-
 /* MAIN SECTION */
 
-.content-1{
+.info{
     text-align: center;
     padding: 2em;
     margin: 30px auto;
 }
 
-.content-1 > .box-container{
+.info > .box-container{
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
@@ -78,16 +78,79 @@ button{
     padding: 3em;
 }
 
-.content-1 > h2{
+.info > h2{
     color:#1F2937;
-    font-size: 1.8em;
+    font-size: 36px;
+    font-weight: 900;
 }
 
-/* TEMPORARY COLOR SET */
 .box-container p{
-    color: black;
+    color: rgba(0,0,0, 0.7);
 }
 
 .img-subtext{
     width: 70%;
+}
+
+/* QUOTE SECTION */
+
+.quote-section{
+    background-color: #e5e7eb;
+    padding: 120px;
+}
+
+.quote{
+    color: #1f2937;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.quote, .speaker{
+    font-style: italic;
+}
+
+.speaker{
+    color: #1F2937;
+    font-size: 24px;
+
+    margin-right: 40px;
+    text-align: right;
+}
+
+/* CALL-TO-ACTION SECTION */
+
+.cta-section{
+    margin: 80px auto;
+}
+
+.cta-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #3882f6;
+    padding: 2em;
+    width: 60%;
+    border-radius: 0.8em;
+}
+
+.sign-up{
+    padding: 5px 20px;
+    border-radius: 0.5em;
+    color: #f9faf8
+}
+
+#filled{
+    background-color: #3882f6;
+}
+
+#hollow{
+    background-color: transparent;
+    border: 2px solid #f9faf8
+}
+
+footer{
+    text-align: center;
+    padding: 2em;
+    background-color: #1F2937;
 }
